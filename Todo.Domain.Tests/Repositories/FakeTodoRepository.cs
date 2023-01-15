@@ -10,7 +10,7 @@ public class FakeTodoRepository : ITodoRepository
 
     public TodoItem GetById(Guid id, string user)
     {
-        return new TodoItem("Learn English", "Anderson Vieira", DateTime.Now);
+        return new TodoItem("Learn English", "Anderson", DateTime.Now);
     }
 
     public void Update(TodoItem todo)
