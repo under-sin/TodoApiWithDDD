@@ -5,8 +5,8 @@ namespace Todo.Domain.Tests.CommandTests;
 [TestClass]
 public class CreateTodoCommandTests
 {
-    private readonly CreateTodoCommand _invalidCommand = new CreateTodoCommand("", "", DateTime.Now);
-    private readonly CreateTodoCommand _validCommand = new CreateTodoCommand("Study English", "Anderson Vieira", DateTime.Now);
+    private readonly CreateTodoCommand _invalidCommand = new("", "", DateTime.Now);
+    private readonly CreateTodoCommand _validCommand = new("Study English", "Anderson Vieira", DateTime.Now);
 
     public CreateTodoCommandTests()
     {
